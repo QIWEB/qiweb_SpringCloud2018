@@ -23,6 +23,7 @@
         <module>service-hi</module>
         <module>service-hi2</module>
         <module>service-ribbon</module>
+        <module>service-feign</module>
     </modules>
 
     <properties>
