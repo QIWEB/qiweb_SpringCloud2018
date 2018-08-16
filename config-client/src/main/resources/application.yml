@@ -1,0 +1,40 @@
+server:
+  port: 8772
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application: #服务名称
+    name: config-client
+  rabbitmq: #消息队列
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+   config:
+    label: master
+    profile: dev
+  bus:
+    enabled: true
+    trace:
+      enabled: true
+#config-client-dev.properties  获取的是这个文件 git上
+#这个是单台配置中心时指定config server url    uri: http://localhost:8888/
+    discovery:
+      enabled: true #是从配置中心读取文件。
+      serviceId: config-server #配置中心的servieId，即服务名。 这样这个配置中心可以集群了起多个服务都会在 E注册中心
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh #消息刷新地址
+
+
+#windows下 安装 rabbitMQ 及操作常用命令
+#rabbitMQ是一个在AMQP协议标准基础上完整的，可服用的企业消息系统。它遵循Mozilla Public License开源协议，采用 Erlang 实现的工业级的消息队列(MQ)服务器，Rabbit MQ 是建立在Erlang OTP平台上。
+
+#1.安装Erlang
+# 所以在安装rabbitMQ之前，需要先安装Erlang 。

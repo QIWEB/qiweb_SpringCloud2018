@@ -1,0 +1,21 @@
+server:
+  port: 8769
+
+spring:
+  application:
+    name: service-zuul
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+#zuul 网络路由
+#首先指定服务注册中心的地址为http://localhost:8761/eureka/，服务的端口为8769，服务名为service-zuul；以/api-a/ 开头的请求都转发给service-ribbon服务；以/api-b/开头的请求都转发给service-feign服务；
+zuul:
+  routes:
+    api-ribbon:
+      path: /api-ribbon/**
+      serviceId: service-ribbon
+    api-feign:
+      path: /api-feign/**
+      serviceId: service-feign

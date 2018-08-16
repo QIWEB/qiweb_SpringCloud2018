@@ -1,0 +1,20 @@
+server:
+  port: 8888
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: config-server
+  cloud:
+   config:
+    label: master
+    server:
+      git:
+        uri: https://github.com/QIWEB/SpringcloudConfigFile/
+#        searchPaths: respo  这是指定文件夹
+        username:
+        password:
