@@ -27,6 +27,8 @@
         <module>service-zuul</module>
         <module>config-server</module>
         <module>config-client</module>
+        <module>service-hi-zipkin</module>
+        <module>service-hi-zipkin-miya</module>
     </modules>
 
     <properties>

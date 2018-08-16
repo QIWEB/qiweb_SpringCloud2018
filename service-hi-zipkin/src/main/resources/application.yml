@@ -1,0 +1,13 @@
+server:
+  port: 8988
+
+spring:
+  application:
+    name: service-hi-zipkin
+  zipkin:
+#通过引入spring-cloud-starter-zipkin依赖和设置spring.zipkin.base-url就可以了。
+    base-url: http://localhost:9411
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
