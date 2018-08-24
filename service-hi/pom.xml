@@ -22,9 +22,39 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+		<!--中添加支持web的模块：-->
+		<!--pom.xml文件中默认有两个模块：-->
+
+		<!--spring-boot-starter：核心模块，包括自动配置支持、日志和YAML；-->
+
+		<!--spring-boot-starter-test：测试模块，包括JUnit、Hamcrest、Mockito。-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- 断路器监控(Hystrix Dashboard)-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+		</dependency>
+		<!--开发环境的调试-->
+		<dependency>
+
+			<groupId>org.springframework.boot</groupId>
+
+			<artifactId>spring-boot-devtools</artifactId>
+
+			<optional>true</optional>
+
 		</dependency>
 	</dependencies>
 
@@ -33,6 +63,12 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!--开发环境的调试-->
+				<configuration>
+
+					<fork>true</fork>
+
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

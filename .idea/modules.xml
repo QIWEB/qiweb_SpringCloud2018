@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/config-client/config-client.iml" filepath="$PROJECT_DIR$/config-client/config-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sc-f-qiweb.iml" filepath="$PROJECT_DIR$/sc-f-qiweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-feign/service-feign.iml" filepath="$PROJECT_DIR$/service-feign/service-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-hi/service-hi.iml" filepath="$PROJECT_DIR$/service-hi/service-hi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-hi-zipkin/service-hi-zipkin.iml" filepath="$PROJECT_DIR$/service-hi-zipkin/service-hi-zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-hi-zipkin-miya/service-hi-zipkin-miya.iml" filepath="$PROJECT_DIR$/service-hi-zipkin-miya/service-hi-zipkin-miya.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-hi2/service-hi2.iml" filepath="$PROJECT_DIR$/service-hi2/service-hi2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-zuul/service-zuul.iml" filepath="$PROJECT_DIR$/service-zuul/service-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-ribbon/serviceri-bbon.iml" filepath="$PROJECT_DIR$/service-ribbon/serviceri-bbon.iml" />
+    </modules>
+  </component>
+</project>

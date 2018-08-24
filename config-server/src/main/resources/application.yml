@@ -9,12 +9,21 @@ eureka:
 spring:
   application:
     name: config-server
-  cloud:
-   config:
+#---------从本地获取配置
+#  profiles:
+#    active: native
+#  cloud:
+#   config:
+#      server:
+#        native:
+#          default-label: master
+#          search-locations: F:/springCloudConf
+
+#下面是配置文件保存到git上
     label: master
     server:
       git:
         uri: https://github.com/QIWEB/SpringcloudConfigFile/
-#        searchPaths: respo  这是指定文件夹
+        searchPaths: respo  这是指定文件夹
         username:
         password:
